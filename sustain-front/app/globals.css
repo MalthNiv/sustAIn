@@ -1,0 +1,132 @@
+:root {
+    --lavender-bg: #F6F4FB;
+    --lavender-section: #ECE9F6;
+    --lavender-card: #FBFAFF;
+    --lavender-border: #E3DEF0;
+    --lavender-primary: #A38BCB;
+    --lavender-deep: #5E4C8A;
+    --lavender-heading: #7E6BAF;
+    --lavender-body: #6B6680;
+    --lavender-sage: #7F9C8C;
+    --lavender-sparkle: #F2E6C9;
+    --radius: 24px;
+    --shadow-soft: 0 2px 12px rgba(94, 76, 138, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: var(--lavender-bg);
+    background-attachment: fixed;
+    color: var(--lavender-body);
+    line-height: 1.6;
+}
+
+/* Map popups — dreamy lavender */
+.mapboxgl-popup-content {
+    background: var(--lavender-card) !important;
+    color: var(--lavender-deep) !important;
+    border: 1px solid var(--lavender-border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    box-shadow: var(--shadow-soft);
+}
+
+.mapboxgl-popup-tip {
+    border-top-color: var(--lavender-border) !important;
+}
+
+/* Animations */
+@keyframes pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.75; }
+}
+
+@keyframes pulse-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes bounce-soft {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+@keyframes sparkle-twinkle {
+    0%, 100% { opacity: 0.35; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+@keyframes float-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+@keyframes glow-pulse {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+@keyframes bar-fill {
+    from { width: 0; }
+}
+
+.animate-pulse-soft {
+    animation: pulse-soft 2.5s ease-in-out infinite;
+}
+
+.animate-bounce-soft {
+    animation: bounce-soft 2s ease-in-out infinite;
+}
+
+.animate-sparkle {
+    animation: sparkle-twinkle 3s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.animate-bar-fill {
+    animation: bar-fill 0.8s ease-out forwards;
+}
+
+.animate-cta-hover {
+    transition: transform 0.2s ease;
+}
+
+.animate-cta-hover:hover {
+    transform: scale(1.03);
+}
+
+.dashboard-metric-card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-metric-card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(94, 76, 138, 0.12);
+}
+
+@media (max-width: 900px) {
+    .dashboard-two-col {
+        grid-template-columns: 1fr !important;
+    }
+}
