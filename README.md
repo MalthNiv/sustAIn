@@ -2,7 +2,7 @@
 
 **Balancing Grid and Green** — *Where renewable potential, infrastructure, and connectivity quietly align.*
 
-**sustAIn** is a geospatial intelligence platform designed to solve the "Where to Build?" problem for the AI era. By synthesizing fragmented infrastructure data into a single, actionable **sustAIn Score**, we empower developers to site data centers that are as sustainable as they are powerful.
+**sustAIn** is a geospatial intelligence platform designed to solve the "Where to Build?" problem for businesses in the AI era. By synthesizing fragmented infrastructure data into a single, actionable **sustAIn Score**, we empower developers to site data centers that are as sustainable as they are powerful.
 
 ---
 
